@@ -15,20 +15,19 @@
 	</div>	
 
 	<div id = "buttonHolder">
-
-		<a class="waves-effect waves-light btn modal-trigger" style="background-color:#d4ac6e" href="#modal1"><i class="material-icons right">add</i>Add Item</a>
-		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">view_list</i>View Summary</a>
-		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">show_chart</i>Targets and Goals</a>
-		
 		<div class="profile">
-			<span> Profile:</span>
-			<select name="users" id="users" class="waves-effect waves-light btn" style="background-color:#d4ac6e">
+			<select name="users" id="users">
+				<option value="" disabled selected>Choose ur fighter</option>
 				<option value="Pauweey">Pauweey</option>
 				<option value="Renz">Renz</option>
 				<option value="BBCUTE">BBCUTES</option>
 			</select>
 		</div>
-	
+
+		<a class="waves-effect waves-light btn modal-trigger" style="background-color:#d4ac6e" href="#modalAddItem"><i class="material-icons right">add</i>Add Item</a>
+		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">view_list</i>View Summary</a>
+		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">show_chart</i>Targets and Goals</a>
+		
 	</div>
 
 	<div class="mainBody">
@@ -42,8 +41,8 @@
 
 			<div class="mbTitle">
 				<div class="profile">
-					<span> By:</span>
-					<select name="users" id="users" class="byTime">
+					<select name="users" id="users">
+						<option value="" disabled selected>View By</option>
 						<option value="Month">Month</option>
 						<option value="Year">Year</option>
 					</select>
@@ -60,32 +59,38 @@
 	
 	
 	<!-- Add Item Modal -->
-	<div id = "modal1" class  = "modal">
+	<div id="modalAddItem" class="modal">
 		<div class="modal-content">
 		<h4>Expense Item</h4>
+		<div class="row">
+			<form class="col s12">
 			<div class="row">
-				<forms class="col s10">
-					<div class="row">
-						<div class="input-field col s7"> 
-							<input type="text" class="validate">
-							<label> Item Name </label> 	
-						</div>	
-
-						<div class="input-field col s3">
-							<input type="text" class="validate">
-							<label> Price </label>
-						</div>
-					</div>
-				</forms>
+				<div class="input-field col s5">
+				<i class="material-icons prefix">local_mall</i>
+				<input id="icon_prefix" type="text" class="validate">
+				<label for="icon_prefix">Item</label>
+				</div>
+				<div class="input-field col s4">
+				<i class="material-icons prefix">attach_money</i>
+				<input id="icon_telephone" type="tel" class="validate">
+				<label for="icon_telephone">Price</label>
+				</div>
+				<div class="input-field col s3">
+				<select>
+					<option value="1">Wallet</option>
+					<option value="2">Savings</option>
+				</select>
+				<label>Category</label>
+				</div>
+				<div class="input-field col s12">
+				<i class="material-icons prefix">edit</i>
+				<input id="icon_telephone" type="tel" class="validate">
+				<label for="icon_telephone">Remarks</label>
+				</div>
 			</div>
+			</form>
 
-		<h6> Total </h6>
-			<div class="row"> 1,500.00 </div> 	
-		</div>
-
-
-		<div class="modal-footer">
-			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+			<a href="#!" class="modal-close waves-effect waves-green btn-floating btn-large right" style="background-color:#d4ac6e"><i class="material-icons">done</i>Submit</a>
 		</div>
 	</div>
 

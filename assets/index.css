@@ -29,6 +29,7 @@ html,body{
 #buttonHolder > a{
 	margin: 0 0 0 10px;
 }
+
 .profile{
 	display: flex;
 	flex-direction: row;

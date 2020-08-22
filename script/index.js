@@ -3,7 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Modal.init(elems, {});
   });
 
-  console.log("we here");  
+document.addEventListener('DOMContentLoaded', function() {
+    var elems1 = document.querySelectorAll('select');
+    var instances1 = M.FormSelect.init(elems1, {});
+  });
+
+console.log("we here");  
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, { 
