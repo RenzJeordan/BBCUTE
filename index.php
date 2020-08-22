@@ -15,6 +15,14 @@
 	</div>	
 
 	<div id = "buttonHolder">
+<<<<<<< HEAD
+=======
+
+		<a class="waves-effect waves-light btn modal-trigger" style="background-color:#d4ac6e" href="#modal1"><i class="material-icons right">add</i>Add Item</a>
+		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e" href="views/Summary.php"><i class="material-icons right">view_list</i>View Summary</a>
+		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">show_chart</i>Targets and Goals</a>
+		
+>>>>>>> 2cff39bd3990788aea803d3ce72cc61d4ed4bd0e
 		<div class="profile">
 			<select name="users" id="users">
 				<option value="" disabled selected>Choose ur fighter</option>
@@ -31,10 +39,38 @@
 	</div>
 
 	<div class="mainBody">
+
 		<div class="mbLeft">
 			<div class="mbTitle">
 				<span>Expenses</span>
 			</div>
+
+			<table class="myExpense">
+				<tr>
+					<th>Item Name</th>
+					<th>Money From</th>
+					<th>Price</th>
+					<th>Remarks</th>
+				</tr>
+				<tr>
+					<td>Invesment</td>
+					<td class="wBorder">Wallet</td>
+					<td class="wBorder">$10</td>
+					<td class="wBorder">Para sa future!</td>
+				</tr>
+				<tr>
+					<td>Food</td>
+					<td class="wBorder">Wallet</td>
+					<td class="wBorder">$69</td>
+					<td class="wBorder">Jabi lang</td>
+				</tr>
+				<tr style="border-bottom: none;">
+					<td></td>
+					<td><b>TOTAL:</b></td>
+					<td style="color: rgb(3,103,4)"><b>$79</b></td>
+					<td></td>
+				</tr>
+			</table>
 		</div>
 		
 		<div class="mbRight">
