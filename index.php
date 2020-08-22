@@ -15,14 +15,6 @@
 	</div>	
 
 	<div id = "buttonHolder">
-<<<<<<< HEAD
-=======
-
-		<a class="waves-effect waves-light btn modal-trigger" style="background-color:#d4ac6e" href="#modal1"><i class="material-icons right">add</i>Add Item</a>
-		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e" href="views/Summary.php"><i class="material-icons right">view_list</i>View Summary</a>
-		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">show_chart</i>Targets and Goals</a>
-		
->>>>>>> 2cff39bd3990788aea803d3ce72cc61d4ed4bd0e
 		<div class="profile">
 			<select name="users" id="users">
 				<option value="" disabled selected>Choose ur fighter</option>
