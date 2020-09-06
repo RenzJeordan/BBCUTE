@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
 </head>
-
-
 <body>
 	<div id="titleHolder">
 		<span> BBCUTE Expense Tracker</span>		
 	</div>	
-
 	<div id = "buttonHolder">
 		<div class="profile">
-			<select name="users" id="users">
+			<select name="users" id="users" class="waves-effect waves-light btn" style="background-color:#d4ac6e">
 				<option value="" disabled selected>Choose ur fighter</option>
 				<option value="Pauweey">Pauweey</option>
 				<option value="Renz">Renz</option>
@@ -27,16 +24,13 @@
 		<a class="waves-effect waves-light btn modal-trigger" style="background-color:#d4ac6e" href="#modalAddItem"><i class="material-icons right">add</i>Add Item</a>
 		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">view_list</i>View Summary</a>
 		<a class="waves-effect waves-light btn" style="background-color:#d4ac6e"><i class="material-icons right">show_chart</i>Targets and Goals</a>
-		
+
 	</div>
-
 	<div class="mainBody">
-
 		<div class="mbLeft">
 			<div class="mbTitle">
 				<span>Expenses</span>
 			</div>
-
 			<table class="myExpense">
 				<tr>
 					<th>Item Name</th>
@@ -69,8 +63,8 @@
 
 			<div class="mbTitle">
 				<div class="profile">
-					<select name="users" id="users">
-						<option value="" disabled selected>View By</option>
+					<span> By:</span>
+					<select name="users" id="users" class="byTime">
 						<option value="Month">Month</option>
 						<option value="Year">Year</option>
 					</select>
@@ -83,7 +77,6 @@
 
 		</div>
 	</div>
-
 	
 	
 	<!-- Add Item Modal -->
@@ -117,21 +110,17 @@
 				</div>
 			</div>
 			</form>
-
 			<a href="#!" class="modal-close waves-effect waves-green btn-floating btn-large right" style="background-color:#d4ac6e"><i class="material-icons">done</i>Submit</a>
 		</div>
 	</div>
-
    <!--<form method="post" action="database/queries.php">
 		<input type="text" name="firstName" placeholder="First Name"> </input>
 		<input type="text" name="lastName" placeholder="Last Name"> </input>
       	<button type="submit" name="toInsert"> click mo to </button>
    </form>-->
-
    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    <script src = "script/index.js"></script>	
    
-
 </body>
 </html>
