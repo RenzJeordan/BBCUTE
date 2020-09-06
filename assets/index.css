@@ -29,18 +29,17 @@ html,body{
 #buttonHolder > a{
 	margin: 0 0 0 10px;
 }
-
 .profile{
 	display: flex;
 	flex-direction: row;
 	height: 100%;
-	width: 200px;
+	width: 210px;
 	margin: 0 0 0 15px;
 	align-items: center;
 }
 
 #users{
-	width: 60%;
+	width: 100%;
 	margin: 0 0 0 10px;
 }
 
@@ -103,4 +102,8 @@ html,body{
 
 .wBorder{
 	border-left: 1px solid rgb(224, 224, 224);
+}
+
+.SumYear{
+	width: 100px;
 }
